@@ -24,6 +24,5 @@ for line in fin:
 fin.close()
 fout.close()
 call("sudo mv practica_creativa2/bookinfo/src/productpage/templates/aux.html practica_creativa2/bookinfo/src/productpage/templates/productpage.html", shell = True )
-call("sudo rm practica_creativa2/bookinfo/src/productpage/templates/aux.html", shell = True )
 
-call("python3 practica_creativa2/bookinfo/src/productpage/productpage_monolith.py 9080", shell = True )
+call("sudo python3 practica_creativa2/bookinfo/src/productpage/productpage_monolith.py 9080", shell = True )
