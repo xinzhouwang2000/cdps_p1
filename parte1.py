@@ -18,7 +18,7 @@ fout = open("practica_creativa2/bookinfo/src/productpage/templates/aux.html", 'w
 for line in fin:
     if ("Simple Bookstore App" in line) :
         fout.write("{% block title %} Simple Bookstore App "+GROUP_NUMBER+" {% endblock %} ")
-        fout.write("{% block content %}")  
+        fout.write(" {% block content %}")  
     else:
         fout.write(line)    
 fin.close()
